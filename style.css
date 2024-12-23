@@ -1,0 +1,392 @@
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, sans-serif;
+        line-height: 1.6;
+        color: #424242;
+      }
+
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.2rem 2rem;
+        background: white;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+      }
+
+      .logo img {
+        height: 17px;
+      }
+
+      .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+      }
+
+      .nav-item {
+        text-decoration: none;
+        color: #666;
+        font-size: 0.95rem;
+        transition: color 0.3s;
+      }
+
+      .nav-item:hover {
+        color: #387ed1;
+      }
+
+      .menu-btn {
+        display: none;
+        background: none;
+        border: none;
+        cursor: pointer;
+      }
+
+      .hero {
+        margin-top: 70px;
+        padding: 4rem 2rem;
+        text-align: center;
+        max-width: 1200px;
+        margin: 70px auto 0;
+      }
+
+      .platform-preview {
+        margin: 2rem auto;
+        max-width: 100%;
+        overflow: hidden;
+        border-radius: 4px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+      }
+
+      .platform-img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      .hero-content {
+        margin-top: 3rem;
+        padding: 0 1rem;
+      }
+
+      h1 {
+        font-size: 2.5rem;
+        color: #424242;
+        margin-bottom: 1rem;
+        font-weight: 500;
+      }
+
+      .hero-content p {
+        font-size: 1.25rem;
+        color: #666;
+        margin-bottom: 2rem;
+      }
+
+      .cta-button {
+        display: inline-block;
+        padding: 0.8rem 2rem;
+        background-color: #387ed1;
+        color: white;
+        text-decoration: none;
+        border-radius: 3px;
+        font-size: 1.1rem;
+        transition: background-color 0.3s;
+      }
+
+      .cta-button:hover {
+        background-color: #2f6cb3;
+      }
+
+      .trust-section {
+        padding: 4rem 2rem;
+        background-color: #f9f9f9;
+        text-align: center;
+      }
+
+      .trust-section h2 {
+        font-size: 2.2rem;
+        color: #424242;
+        margin-bottom: 3rem;
+        font-weight: 500;
+      }
+
+      .trust-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+        max-width: 1000px;
+        margin: 0 auto;
+      }
+
+      .trust-item h3 {
+        font-size: 2rem;
+        color: #387ed1;
+        margin-bottom: 0.5rem;
+      }
+
+      .trust-item p {
+        color: #666;
+      }
+
+      .products-section {
+        padding: 4rem 2rem;
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+      }
+
+      .product-card {
+        padding: 2rem;
+        background: white;
+        border-radius: 4px;
+        text-align: center;
+        transition: transform 0.3s;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .product-card:hover {
+        transform: translateY(-5px);
+      }
+
+      .product-logo {
+        height: 40px;
+        margin-bottom: 1rem;
+      }
+
+      .product-card h3 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        color: #424242;
+      }
+
+      .product-card p {
+        color: #666;
+        margin-bottom: 1.5rem;
+      }
+
+      .product-link {
+        color: #387ed1;
+        text-decoration: none;
+        font-weight: 500;
+      }
+
+      .education-section {
+        background: #f9f9f9;
+        padding: 4rem 2rem;
+      }
+
+      .education-content {
+        max-width: 800px;
+        margin: 0 auto;
+        text-align: center;
+      }
+
+      .education-content h2 {
+        font-size: 2.2rem;
+        margin-bottom: 1.5rem;
+        color: #424242;
+      }
+
+      .education-content p {
+        color: #666;
+        margin-bottom: 2rem;
+        font-size: 1.1rem;
+      }
+
+      .learn-more {
+        color: #387ed1;
+        text-decoration: none;
+        font-weight: 500;
+      }
+
+      .education-stats {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 2rem;
+        max-width: 600px;
+        margin: 3rem auto 0;
+        text-align: center;
+      }
+
+      .stat-item h3 {
+        font-size: 1.8rem;
+        color: #387ed1;
+        margin-bottom: 0.5rem;
+      }
+
+      .open-account {
+        padding: 4rem 2rem;
+        text-align: center;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+
+      .open-account h2 {
+        font-size: 2.2rem;
+        margin-bottom: 1rem;
+        color: #424242;
+      }
+
+      .open-account p {
+        color: #666;
+        margin-bottom: 2rem;
+        font-size: 1.1rem;
+      }
+
+      footer {
+        background: #fafafa;
+        padding: 4rem 2rem 2rem;
+      }
+
+      .footer-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 2rem;
+        max-width: 1200px;
+        margin: 0 auto;
+        margin-bottom: 3rem;
+      }
+
+      .footer-col h4 {
+        color: #424242;
+        margin-bottom: 1rem;
+        font-size: 1rem;
+      }
+
+      .footer-col ul {
+        list-style: none;
+      }
+
+      .footer-col ul li {
+        margin-bottom: 0.5rem;
+      }
+
+      .footer-col ul li a {
+        color: #666;
+        text-decoration: none;
+        font-size: 0.9rem;
+        transition: color 0.3s;
+      }
+
+      .footer-col ul li a:hover {
+        color: #387ed1;
+      }
+
+      .footer-bottom {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding-top: 2rem;
+        border-top: 1px solid #eee;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+      }
+
+      .footer-logo {
+        height: 17px;
+      }
+
+      .footer-bottom p {
+        color: #666;
+        font-size: 0.9rem;
+      }
+
+      .social-links {
+        display: flex;
+        gap: 1rem;
+      }
+
+      .social-link {
+        color: #666;
+        text-decoration: none;
+        font-size: 0.9rem;
+        transition: color 0.3s;
+      }
+
+      .social-link:hover {
+        color: #387ed1;
+      }
+
+      @media (max-width: 768px) {
+        .nav-links {
+          display: none;
+        }
+
+        .menu-btn {
+          display: block;
+        }
+
+        .hamburger {
+          display: block;
+          width: 20px;
+          height: 2px;
+          background: #666;
+          position: relative;
+        }
+
+        .hamburger::before,
+        .hamburger::after {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 2px;
+          background: #666;
+        }
+
+        .hamburger::before {
+          top: -6px;
+        }
+
+        .hamburger::after {
+          bottom: -6px;
+        }
+
+        .hero {
+          margin-top: 60px;
+          padding: 2rem 1rem;
+        }
+
+        h1 {
+          font-size: 2rem;
+        }
+
+        .hero-content p {
+          font-size: 1.1rem;
+        }
+
+        .products-section,
+        .trust-section,
+        .education-section,
+        .open-account {
+          padding: 3rem 1rem;
+        }
+
+        .trust-section h2,
+        .education-content h2,
+        .open-account h2 {
+          font-size: 1.8rem;
+        }
+
+        .footer-bottom {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        .social-links {
+          justify-content: center;
+        }
+      }
